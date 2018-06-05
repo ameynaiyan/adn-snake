@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link href="css/main.css" rel="stylesheet">
+		<script src="js/jquery-1.7.1.js"></script>
+		<script src="js/hammer.min.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="menuView full">
+				<div class="logoDiv"><img src="css/images/logo.png"/></div>
+				<div class="clrb menu-item mfe">
+					<div class="newGame pull-center mvButton">New Game</div>
+				</div>
+				<div class="clrb menu-item menu-item-anim">
+					<div class="highScores pull-center mvButton">High Scores</div>
+				</div>
+				<div class="clrb menu-item menu-item-anim">
+					<div class="exit pull-center mvButton">Quit</div>
+				</div>
+				<div class="clrb menu-item menu-item-anim">
+					<div class="center mle">&copy 2014 ADN</div>
+				</div>
+			</div>
+			<div class="gameView full">
+				<div class="clrb top-bar center">
+					<div class="p33 pull-left nm"><div class="button back pull-left"><img src="css/images/back.png"/></div></div>
+					<div class="p33	pull-left nm"><div class="pull-center logo"><img src="css/images/logo.png"/></div></div>
+					<div class="p33 pull-right nm"><div class="button replay pull-right"><img src="css/images/replay.png"/></div></div>
+				</div>
+				<div class="canvasDiv" id="canvasDiv"></div>
+				<div class="menu">
+					<div class = "score pull-left label">
+						Score : <span class="teal pts"></span>
+					</div>
+					<div class="pull-right button pause">
+						<img src="css/images/pause.png"/>
+					</div><div class="pull-right button resume">
+						<img src="css/images/play.png"/>
+					</div>
+				</div>
+				<div class="bbDiv">
+					<div class="bonusbar"></div>
+				</div>
+				
+			</div>
+			<div class="ngView full">
+				<div class="clrb top-bar center">
+					<div class="p33 pull-left nm"><div class="button back pull-left"><img src="css/images/back.png"/></div></div>
+					<div class="p33	pull-left nm"><div class="pull-center logo"><img src="css/images/logo.png"/></div></div>
+					<div class="p33 pull-right nm"></div>
+				</div>
+				<div class="clrb menu-item menu-title">
+					New Game
+				</div>
+				<div class="clrb menu-item">
+					<div class="pull-left label">Grid Size</div>
+					<div class="button size16 pull-right">Large</div>
+					<div class="button size32 pull-right">Medium</div>
+					<div class="button size64 pull-right btn-active">Small</div>
+				</div>
+				<div class="clrb menu-item menu-item-anim">
+					<div class="pull-left label">Difficulty</div>
+					<div class="button hard pull-right">Hard</div>
+					<div class="button medium pull-right">Medium</div>
+					<div class="button easy pull-right btn-active">Easy</div>
+				</div>
+				<div class="clrb menu-item center">
+					<div class="mvButton play pull-center">Play</div>
+				</div>	
+			</div>
+			<div class="hsView full">
+				<div class="clrb top-bar center">
+					<div class="p33 pull-left nm"><div class="button back pull-left"><img src="css/images/back.png"/></div></div>
+					<div class="p33	pull-left nm"><div class="pull-center logo"><img src="css/images/logo.png"/></div></div>
+					<div class="p33 pull-right nm"></div>
+				</div>
+				<div class="clrb menu-item menu-title">
+					High Scores
+				</div>
+				<div class="clrb sc-list">
+				</div>
+			</div>
+			<div class="resultView full">
+				<div class="clrb top-bar center">
+					<div class="p33 pull-left nm"></div>
+					<div class="p33	pull-left nm"><div class="pull-center logo"><img src="css/images/logo.png"/></div></div>
+					<div class="p33 pull-right nm"><div class="button replay pull-right"><img src="css/images/replay.png"/></div></div>
+				</div>
+				<div class="clrb menu-item menu-title">
+					Game Over
+				</div>
+				<div class="clrb menu-item center fsDiv">
+					Score : <span class="teal finalscore"></span>
+				</div>
+
+				<div class="clrb newHSDisplay">
+					<div class="clrb menu-title menu-item-anim">
+						New High Score!
+					</div>
+					<div class="clrb sc-list">
+					</div>
+				</div>
+				
+				<div class="clrb menu-item center">
+					<div class="mvButton back pull-center">Go to Main Menu</div>
+				</div>	
+				<div class="namePrompt">
+					<div class="namebox">
+						<input type="text" class="inputBox" placeholder="Enter Name..."/>
+						<div class = "mvButton nameSubmit m20">Submit</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

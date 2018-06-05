@@ -1,0 +1,317 @@
+@font-face
+{
+	font-family: hnl;
+	src: url(fonts/hn-l.otf);
+}
+
+@font-face
+{
+	font-family: hnul;
+	src: url(fonts/hn-ul.ttf);
+}
+
+			body{
+				margin:0px;
+				padding:0px;
+				font-family:hnl;
+			}
+			.logoDiv{
+				position:fixed;
+				top:0px;
+				left:0px;
+				height:128px;
+				width:100%;
+				background-color:black;
+				overflow:hidden;
+				z-index:100;
+				text-align:center;
+				-webkit-animation: ld-anim 0.5s; /* Chrome, Safari, Opera */
+    				animation: ld-anim 0.5s;
+			}
+			.logoDiv img{
+				height:128px;
+				width:auto;
+			}
+			.mvButton{
+				width:80%;
+				background-color:black;
+				color:white;
+				font-family:hnl;
+				font-size:28px;
+				text-align:center;
+				height:32px;
+				padding:16px;
+			}
+			.canvasDiv{
+				margin:10px auto 0px auto;
+				width:100%;
+				height:auto;
+			}
+			.container{
+				padding-top:48px;
+				//border:1px solid #999999;
+				height:auto;
+				margin:0px auto;
+				width:640px;
+			}
+			.menu{
+				width:100;
+				margin:0px auto;
+				padding:8px;
+				overflow:auto;
+			}
+			.score{
+				color:black;
+				font-size:36px;
+			}
+			.teal{
+				color:teal;
+			}
+			.pull-left{
+				float:left;
+				margin-right:8px;
+			}
+			.pull-right{
+				float:right;
+				margin-left:8px;
+			}
+			.pull-center{
+				margin:0px auto;
+			}
+			.button{
+				background-color:black;
+				color:white;
+				font-family:hnl;
+				font-size:28px;
+				text-align:center;
+				height:32px;
+				width:auto;
+				padding:16px;
+			}
+			.button:hover,.mvButton:hover{
+				background-color:teal;
+			}
+				
+			.full{
+				width:100%;
+				height:100%;
+			}
+			.clrb{
+				clear:both;
+			}
+			.play{
+				margin-top:64px;
+				width:60%;
+			}
+			.btn-active{
+				background-color:teal;
+			}
+			.menu-item{
+				position:relative;
+				font-family:hnl;
+				font-size:32px;
+				margin-bottom:16px;
+				overflow:auto;
+				padding:8px;
+				
+			}
+			.menu-item-anim{
+				-webkit-animation: menu-item-anim 0.5s; /* Chrome, Safari, Opera */
+    				animation: menu-item-anim 0.5s;
+			}
+			.menu-item .button{
+				width:96px;
+			}
+			.menu-title{
+				color:teal;
+				font-family:hnul;
+				text-align:center;
+				font-size:64px;
+				margin-top:64px;
+				margin-bottom:64px;
+			}
+			.ngView{
+				position:relative;
+				top:0px;
+				left:0px;
+			}
+			.top-bar{
+				position:fixed;
+				top:0px;
+				left:0px;
+				height:48px;
+				width:100%;
+				background-color:black;
+				overflow:hidden;
+				z-index:100;
+				-webkit-animation: tb-anim 0.5s; /* Chrome, Safari, Opera */
+    				animation: tb-anim 0.5s;
+			}
+			.top-bar .button{
+				height:48px;
+				padding:8px;
+			}
+			.logo{
+				margin:8px;
+				width:100;
+			}
+			.logo img{
+				width:auto;
+				height:32px;
+			}
+			.center{
+				text-align:center;
+			}	
+			.label{
+				margin:16px;
+			}
+			.p33{
+				width:33.33%;
+				height:48px;
+			}
+			.nm{
+				margin:0px;
+			}
+			.mfe{
+				margin-top:144px;
+			}
+			.mle{
+				margin-top:72px;
+			}
+			canvas{
+				width:100%;
+			}
+			.namePrompt{
+				position:fixed;
+				top:0px;
+				left:0px;
+				width:100%;
+				height:100%;
+				background:rgba(0,0,0,0.8);
+				z-index:200;
+			}
+			.namebox{	
+				background:white;
+				margin:128px auto;
+				width:400px;
+				height:auto;
+				overflow:auto;
+			}	
+			.inputBox{	
+				font-size:32px;
+				width:336px;
+				margin:20px;
+				border:none;
+				padding:10px;
+				color:white;
+				background-color:teal;
+			}
+			.m20{
+				width:324px;
+				margin:0px 20px 20px 20px;
+			}
+			.sc-pos{
+				width:3%;
+			}	
+			.sc-name{
+				width:55%;
+			}
+			.sc-score{
+				width:15%;
+			}
+			.sc-base{
+				margin-right:8px;
+				height:32px;
+				color:white;
+				background-color:teal;
+				padding:24px;
+				float:left;
+			}
+			.sc-hs{
+				background-color:black;
+			}
+			.fsDiv{
+				font-size:48px;
+				margin-bottom:32px;
+			}
+			.bbDiv{
+				width:100%;
+				height:24px;
+			}
+			.bonusbar{
+				width:100%;
+				height:100%;
+				background-color:teal;
+			}
+			@-webkit-keyframes menu-item-anim {
+    				from {margin-top: 256px;}
+    				to {margin-top: 0px;}
+			}
+			@keyframes menu-item-anim {
+    				from {margin-top: 256px;}
+    				to {margin-top: 0px;}
+			}
+
+			@-webkit-keyframes tb-anim {
+    				from {top: -48px;}
+    				to {top: 0px}
+			}
+			@keyframes tb-anim {
+    				from {top: -48px;}
+    				to {top: 0px;}
+			}
+
+			@-webkit-keyframes ld-anim {
+    				from {top: -128px;}
+    				to {top: 0px}
+			}
+			@keyframes ld-anim {
+    				from {top: -128px;}
+    				to {top: 0px;}
+			}
+			
+			@media (max-width: 640px) {
+  				.container{
+					padding-top:48px;
+					//border:1px solid #999999;
+					height:auto;
+					margin:0px auto;
+					width:480px;
+				}
+				.menu-item .button{
+					width:60px;
+				}
+				.button{
+					background-color:black;
+					color:white;
+					font-family:hnl;
+					font-size:18px;
+					text-align:center;
+					height:32px;
+					width:auto;
+					padding:24px 16px 16px 16px;
+				}
+				.btn-active{
+					background-color:teal;
+				}
+				.label{
+					margin:16px;
+				}
+				.sc-base{
+					font-size:24px;
+					margin-right:8px;
+					height:24px;
+					color:white;
+					background-color:teal;
+					padding:16px;
+					float:left;
+				}
+				.sc-hs{
+					background-color:black;
+				}	
+				.logoDiv img{
+					height:96px;
+					width:auto;
+					margin-top:16px;
+				}
+			}
